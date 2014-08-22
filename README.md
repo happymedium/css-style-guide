@@ -96,9 +96,23 @@ When styling a component, start with an element + class namespace (prefer class 
 
 ### CSS Specificity Guidelines
 
+Try to follow the [BEM Methodology](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) when building out components in CSS.
+
+* When building out a block, use the BEM selectors to separate different components. Here are a few examples:
+
+		<div class="block block--event">
+			<div class="block__thumb">
+				<img src="http://..." alt="Thumbnail" />
+			</div>
+			<div class="block__text">
+				<h3 class="block__title"><a href="#">This is a title</a></h3>
+				<div class="block__excerpt">
+					<p>This is an excerpt</>
+				</div>
+			</div>
+		</div>
+
 * If you must use an id selector (`#selector`) make sure that you have no more than _one_ in your rule declaration. A rule like `#header .search #quicksearch { ... }` is considered harmful.
-* When modifying an existing element for a specific use, try to use specific class names. Instead of `.listings-layout.bigger`, use rules like `.listings-layout.listings-bigger`. Think about `ack/greping` your code in the future.
-* The class names `disabled`, `mousedown`, `danger`, `hover`, `selected`, and `active` should always be namespaced by a class (`button.selected` is a good example).
 
 ## Separate Style from Layout
 
