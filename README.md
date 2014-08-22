@@ -98,7 +98,7 @@ When styling a component, start with an element + class namespace (prefer class 
 
 Try to follow the [BEM Methodology](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) when building out components in CSS.
 
-* When building out a block, use the BEM selectors to separate different components. Here are a few examples:
+* When building out a block, use the BEM selectors to separate different components. Here is an example:
 
 		<div class="block block--event">
 			<div class="block__thumb">
@@ -119,12 +119,12 @@ Try to follow the [BEM Methodology](http://csswizardry.com/2013/01/mindbemding-g
 In general, try to separate style from layout. This allows for modular reuse of styles throughout your site while keeping layout independent. Remember: it's easier to add or remove a class from an HTML element than refactor all of your CSS!
 
 		// bad example
-		<div class="two-columns-featured">
+		<div class="two-columns--featured">
 			<div class="col"></div>
 			<div class="col"></div>
 		</div>
 
-		.two-columns-featured {
+		.two-columns--featured {
 			background: #efefef;
 			font-size: 1.2em;
 
@@ -136,7 +136,7 @@ In general, try to separate style from layout. This allows for modular reuse of 
 		}
 
 		// good example
-		<div class="two-columns featured">
+		<div class="two-columns section--featured">
 			<div class="col"></div>
 			<div class="col"></div>
 		</div>
@@ -149,7 +149,7 @@ In general, try to separate style from layout. This allows for modular reuse of 
 			}
 		}
 
-		.featured {
+		.section--featured {
 			background: #efefef;
 			font-size: 1.2em;
 		}
