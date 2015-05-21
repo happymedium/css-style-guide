@@ -1,5 +1,9 @@
-Happy Medium CSS Style Guide
+MOVED: Happy Medium CSS Style Guide
 ===============
+
+__UPDATE__: Please visit our official [Best Practices repo](https://github.com/itsahappymedium/best-practices).
+
+---
 
 Welcome to Happy Medium's internal CSS style guide. We use this for any project involving websites at Happy Medium. You should have a general idea of **specificity** and the [SCSS syntax](http://sass-lang.com/).
 
